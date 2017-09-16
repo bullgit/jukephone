@@ -25,10 +25,10 @@
 <Response>
   <?php if ($songfile): ?>
     <!-- <Say language="de-DE">Du hörst jetzt <?php echo $songtitle ?> von <?php echo $songartist ?>.</Say> -->
-    <Say voice="alice" language="en-GB">You are now listening to <?php echo $songtitle ?> from <?php echo $songartist ?>.</Say>
+    <Say voice="alice" language="en-US">You are now listening to <?php echo $songtitle ?> from <?php echo $songartist ?>.</Say>
     <Play>https://<?php echo $_SERVER['HTTP_HOST'] ?>/songs/<?php echo $songfile ?>.mp3</Play>
   <?php else: ?>
     <!-- <Say language="de-DE">Ein Lied mit dieser Nummer existiert nicht, tschüss.</Say> -->
-    <Say voice="alice" language="en-GB">A Song with this number doesn't exist, bye.</Say>
+    <Say voice="alice" language="en-US">A Song with this number doesn't exist, bye.</Say>
   <?php endif ?>
 </Response>
